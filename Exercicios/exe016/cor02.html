@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            height: 100%;
+        }
+        body{
+            background-image: linear-gradient(to top, rgb(29, 165, 29), rgb(255, 255, 255), rgb(29, 165, 29));
+            background-attachment: fixed;
+        }
+    </style>
+    <title>Cor gradiente</title>
+</head>
+<body>
+    <p>Para criar um fundo com gradiente entre cores:</p>
+    <p>Na "head" use a tag "style" (para confirguração de CSS)</p>
+    <p>Dentro desta tag use o parametro "height" (tamanho do degradê na tela)</p>
+    <p>Use também o parametro "background-image" (imagem de fundo)</p>
+    <p>Use também o parametro "linear-gradient" (formato linear do degradê). OBS: Também existe o "radial-gradient" (formato radial do degradê</p>
+    <p>Dentro deste parametro use as coordenadas</p> 
+    <ol>
+        <li>De direção do degradê (pode ser identificado pelos lados - right,left, top, bottom - ou por angulos - 90deg, 45deg etc.).</li>
+        <li>De cores na ordem em que vão aparecer no degradê(aconselhável usar paletas de 3 à 5 cores para não ficar nuito pesada a imagem).</li>
+        <li>Do tamanho que a cor escolhida vai aparecer na tela (exemplo: azul 25%, amarelo 75%).</li>
+    </ol>
+    <p>Use também o parametro "background-attachment" que é reação do fundo de tela ao mover o mouse (Exemplo: "fixed" o fundo se mantem parado).</p>
+</body>
+</html>

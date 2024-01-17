@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aliceblue;
+        }
+        header{
+            background-color: aqua;
+            padding: 10px;
+            margin: 5px;
+        }
+        nav{
+            text-decoration: none;
+            background-color: rgb(158, 113, 113);
+        }
+        nav>a{
+            text-decoration: dashed;
+        }
+        main{
+            background-color: blueviolet;
+            margin: 5px;
+            border-radius: 10px 15px;
+            box-shadow: 5px 3px 3px 5px black;
+        }
+        section{
+            margin: 2px;
+            padding: 1px;
+        }
+        article{
+            background-color: rgb(182, 182, 192);
+        }
+        article>aside{
+            color: rgb(112, 97, 97);
+        }
+        footer{
+            color: rgb(1, 1, 39);
+            background-color: brown;
+            padding: 1px;
+            margin: 0px;
+        }
+        footer>p{
+            margin: 0px;
+        }
+        div#circulo{
+            height: 100px;
+            width: 100px;
+            padding: 10px;
+            border: 10px;
+            margin: 10px;
+            background-color: aqua;
+            border-radius: 50%;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">Link</a>
+            <a href="#">link</a>
+            <a href="#">Link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            Como dividir infomrações por seções específicas?
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>É possível dar título ao artigo</h2>
+                <p>Para este texto também utilizei um "box-shadow" dando tridimensionalidade ao texto.</p>
+                <aside>
+                    <p>É possivel assinar o artigo</p>
+                </aside>
+            </article>
+
+        </section>
+    </main>
+    <p>Para criar seções diferentes, ultilizei "header" para criação de um cabeçalho ("nav" e "a" para uma lista de links),
+        "main" para desenvolvimento do assunto principal (dividido em "section" para seccionar as informações, "article"
+        para cada artigo, "aside" para cada assinatura) e "footer" para a finalização. Este foi um exemplo de aula, mas as
+        tags podem ser organizadas de outras formas também.</p>
+    <footer>
+        <p>Entendendo como os agrupementos de informações pode funcionar.</p>
+    </footer>
+   <div id="circulo">Exemplo</div>
+   <p>Acima um exemplo de como usar o "border-radius" para criar ondulação nas pontas da borda. Até mesmo, fazer virar um circulo</p>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+        Lembrando: #=id; .=class; >=children; :=pseudo-class; ::=pseudo-element
+        Utilizados para personalizar seletores
+        */
+        body{
+            font-family: cursive;
+        }
+
+        a{
+            text-decoration: none;
+            color: brown;
+            font-weight: bolder;
+        }
+
+        a:visited{
+            color: blueviolet;
+        }
+
+        a:hover{
+            color: blue;
+            text-decoration: underline;
+            font-size: large;
+        }
+
+        a:active{
+            color: aqua;
+        }
+
+        .ytb::before{
+            content: '» ';
+        }
+
+        .ytb::after{
+            content:' «';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizar Links</h1>
+    <ul>
+        <li><a href="https://www.instagram.com/" target="_blank"> Instagram</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" class="ytb">Youtube</a></li>
+        <li><a href="https://www.tiktok.com/" target="_blank">TikTok</a></li>
+        <li><a href="https://www.adorocinema.com/" target="_blank">Exemplo</a></li>
+    </ul>
+    <p>Para personalizar o link (proposto no "href" do "a" com a "target" em "_blank").</p>
+    <p>Também há pseudo-classes "active" para o link que receber um click e "visited" para links que já foram acessados.</p>
+    <p>"::" utilizados para pseudo-elementos antes ("before") ou depois ("after") de uma informação. E usando "content" foi possível, aplicar um símbolo no texto.</p>
+
+</body>
+</html>

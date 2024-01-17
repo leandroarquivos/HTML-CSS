@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Ordenadas</h2>
+    <ol type="1">
+        <li>Com o uso da tag &lt;ol&gt; cria-se listas ordenadas</li>
+        <li>Com o uso da tag &lt;li&gt; cria-se o item de cada lista</li>
+        <li>Com o uso do parametro "type" cria-se a forma de classificação das listas</li>
+        <li>Em listas ordenadas, os tipos de classificações são</li>
+        <ol type="A">
+            <li>A</li>
+            <li>a</li>
+            <li>I</li>
+            <li>i</li>
+            <li>1</li>
+        </ol>
+    </ol>
+    <h2>Não Ordenadas</h2>
+    <ul type="circle">
+        <li>Com o uso da tag &lt;ul&gt; cria-se listas não ordenadas</li>
+        <li>Com o uso da tag &lt;li&gt; cria-se o item de cada lista</li>
+        <li>Com o uso do parametro "type" cria-se a forma de classificação das listas</li>
+        <li>Em listas não ordenadas, os tipos de classificações são</li>
+        <ul type="square">
+            <li>disc</li>
+            <li>circle</li>
+            <li>square</li>
+        </ul>
+    </ul> <!--caso seja necessário fazer comentários no código que não devem aparecer na imagem usa-se a tag "!--".-->
+    <h2>Listas mistas</h2>
+    <ol type="A">
+        <li>- Uma alternativa para misturar as listas é:</li>
+        <ol type="i">
+            <li>Criar sub-itens de maneira ordenada ou não ordenada</li>
+            <li>Criar sub-itens que podem servir dividindo as informações, mas sem mexer na continuidade delas</li>
+            <ul>
+                <li><mark>Obs: Caso queira mudar mais de uma tag ao mesmo tempo, clique sobre as tags enquanto pressiona a tecla "Alt".</mark></li>
+            </ul>
+        </ol>
+    </ol>    
+    <ol type="A" start="2">
+        <li>Além de explicar outros fatores, o itens acima também serviram para demonstração</li>
+        <li>A partir deles fica demonstrado como é possível ordenar listas mistas</li>
+        <ol type="a">
+            <li><mark>Obs: Para continuar a lista de onde parou, use a tag "Type" e depois a Tag "Start" dando continuidade a partir do número
+            onde a lista parou.</mark></li>
+        </ol>
+    </ol>
+    <h2>Exemplo de listas possíveis</h2>
+    <ol type="1">
+        <li>Lista com item</li>
+        <ol type="A">
+            <li>Lista com subitem</li>
+            <ol type="a">
+                <li>Lista com sub-subitem</li>
+                <ol type="I">
+                    <li>Lista com sub-sub-subitem</li>
+                    <ol type="i">
+                        <li>Existem 5 formas de marcação ordenadas e 3 não ordanedas.</li>
+                        <ul type="disk">
+                            <li>Numeros</li>
+                            <li>Letras</li>
+                            <ul type="circle">
+                                <li>MAIÚSCULAS</li>
+                                <li>minúsculas</li>
+                            </ul>
+                            <li>Algarismos</li>
+                            <ul type="square">
+                                <li>MAIÚSCULOS</li>
+                                <li>minúsculos</li>
+                            </ul>
+                            
+                        </ul>
+
+                    </ol>
+                </ol>
+            </ol>
+        </ol>
+    </ol>
+    <h2>Listas de definições</h2>
+    <dt>Termo</dt>
+    <dd>Definição sobre o termo</dd>
+    <dt>Para este tipo de lista usa-de a tag &lt;dt&gt;</dt>
+    <dd>Para a descrição usa-se a tag &lt;dd&gt;</dd>  
+</body>
+</html>

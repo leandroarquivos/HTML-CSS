@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Apasih';
+            src: url(fonts/Apasih.otf);
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'Underdog';
+            src: url(fonts/Underdog.otf);
+            font-weight: normal;
+            font-style: normal;
+        }    
+
+        body {
+            font-family: 'Underdog', Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-family: 'Apasih';
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Como adicionar fontes externas</h1>
+    <ol>
+        <li>Salve o documento da fonte na mesma pasta deste html</li>
+        <li>Em "style" use a regra @font-face e nela adicione a "font-family" com o nome que quer que a fonte tenha (informado entre aspas)</li>
+        <li>Adicione também o "src: url (nome da fonte) format (formato da fonte)</li>
+        <li>Não esqueça de adicionar o "font-weight" e o "font-style" também.</li>
+    </ol>
+    <p>Tipos de 'format ()'</p>
+    <ul>
+        <li>opentype (otf)</li>
+        <li>truetype (ttf)</li>
+        <li>embedded-opentype</li>
+        <li>truetype aat (apple advanced typography)</li>
+        <li>svg</li>
+    </ul>
+
+    <h1>Como identificar fontes de imagens?</h1>
+
+    <p>Uma alternativa para identificar uma fonte que apareça em uma imagem é</p>
+    <ol>
+        <li>entrar no site fontsfinder</li>
+        <li>abrir a imagem</li>
+        <li>identificar a fonte e as letras pesquisadas</li>
+        <li>analisar as fontes mais proximas e parecidas da imagem de referência</li>
+    </ol>
+
+</body>
+
+</html>

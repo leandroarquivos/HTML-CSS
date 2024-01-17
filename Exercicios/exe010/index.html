@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Link Externo</h1>
+    <p>Link de fora, por exemplo <a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" target="_blank" rel="external">este aqui</a></p>
+    <p>Para criar este link usa-se a tag &lt;a&gt; e completa o "href" usando o URL escolhido</p>
+    <p>Para abrir o link em uma nova janela é preciso usar o parametro "target="_blank"" e o parametro "rel="external""</p>
+    <h1>Link Interno</h1>
+    <p><a href="pg2.html"rel="next">Acesse aqui</a></p>
+    <h1>Link interno em pasta</h1>
+    <p><a href="exemplo/pg3.html">Acesse aqui</a></p>
+    <h1>Links para Download</h1>
+    <ol>
+        <li>Crie uma pasta com o arquivo que deseja compartilhar para baixarem;</li>
+        <li>Crie um link usando &lt;a&gt; com "href" da pasta do livro;</li>
+        <li>Crie um "Type" "application/pdf" para documentos em pdf ou;</li>
+        <li>Crie um "Type" "application/zip" para documentos em zip</li>
+    </ol>
+    <ul>
+        <li><a href="download/ZINE - Estruturado.pdf" target="_blank" type="application/pdf" download="ZINE - Estruturado.pdf">Arquivo pdf</a></li>
+        <li><a href="download/ZINE - Estruturado.zip"download="ZINE - Estruturado.zip" type="application/zip">Arquivo zip</a></li>
+    </ul>
+    
+</body>
+</html>

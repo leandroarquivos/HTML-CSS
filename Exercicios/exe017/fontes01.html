@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+        }
+        h2 {
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+    </style>
+    <title>Fontes em CSS</title>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Com o parametro "font-family" nas CSS, você pode mudar a familia da fonte. Por exemplo, este texto pode estar aparecendo em Arial ou em Helvetica ou em Sans-Serif (tendo esta mesma ordem como prioridade), desta forma página que não reconhecerem a fonte Arial, apresentaram o texto em helvetica e, assim sucessivamente.</p>
+
+    <h1>Medidas de fontes</h1>
+    
+    <h2>Absolutas</h2>  
+    <p>São medidas que são estáticas logo, dependendo da tela onde são apresentadas, podem ser mal visualizadas</p>
+    <ul>
+        <li>Centimetro (cm)</li>
+        <li>Milimetro (mm)</li>
+        <li>Polegada (in)</li>
+        <li>Pixel (px)</li>
+        <li>Ponto (pt)</li>
+        <li>Paica (pc)</li>
+    </ul>
+
+    <h2>Relativas</h2>
+    <p>São formas de medição relativas à alguma medida base</p>
+    <ul>
+        <li>Relativo ao tamanho da letra M maiúscula da fonte (em)</li>
+        <li>Relativo à altura da letra x minúscula da fonte (ex)</li>
+        <li>Relativo ao tamanho da letra M maiúscula da fonte que estiver configurada no body da página (rem)</li>
+        <li>Relativo à largura da tela onde vai aparecer, conhecida também como View Widht (vw)</li>
+        <li>Relativo à altura da tela onde vai aparecer, conhecida também como View height (vh)</li>
+        <li>Relativo ao tamanho da tela onde vai aparecer medida em porcentagem (%)</li>
+    </ul>
+
+    <h2>Recomendação</h2>
+    <p>A W3C recomenda o uso de px e em no parametro font-size. 16px ou 1em são comuns no uso das páginas. </p>
+
+    <h2>Peso da fonte</h2>
+    <p>Nem todas as fontes tem peso da fonte, mas algumas tem e são usadas para dar mais densidade aos algarismos da fonte.</p>
+    <p>Cada fonte precisa então de:
+    <ol>
+        <li>"font-style" representando a estilização dada àquela fonte (ex: italic...)</li>
+        <li>"font-weight" representando o peso da fonte (ex: bolder, 300...)</li>
+        <li>"font-size" representando o tamanho da fonte (1em...)</li>
+        <li>"font-family" representando a familia da fonte ("Work Sans", Sans-serif...)</li>
+    </ol>
+    </p>
+    <p>Para facilitar a escrita do código há um shorthand*, uma tag chamada "font". Tem que estar nesta ordem (font: font-style font-weight font-size font-family;)</p>
+    <p><mark>Shorthand* = mãozinha, apoio, facilitação</mark> (ex: h2 desta página).</p>
+</body>

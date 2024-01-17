@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com html 5</title>
+</head>
+<body>
+    <h1>Formatos de video</h1>
+    <p>Os mais compatíveis aos navegadores são "mp4", "m4v" e "webm". <br> Outos como "ogv", por exemplo, nem sempre são compatíveis.</p>
+    <p>Caso seja necessário, use um conversor de video para mudar o formato do video.</p>
+    <h1>Videos com hospedagem locais</h1>
+    <p>Para inserir videos e áudios o processo é muito parecido. Só mudando alguns pequenos detalhes</p>
+    <p>OBS: Assim como em imagens é necessário observar o tamanho do video.</p>
+    <p>Exemplo:</p>
+    <video width="560px" poster="imagens/pexels-arvin-latifi-6466763.png" autoplay controls loop>
+        <source src="midia/640x360-webm-pexels-arvin-latifi-6466763.webm" type="video/webm">
+        <source src="midia/640x360-mpeg-pexels-arvin-latifi-6466763.mpg" type="video/mpg">
+        <source src="midia/640x360-mp4-pexels-arvin-latifi-6466763.mp4" type="video/mp4">
+        <p>Seu navegador não é compatível. Caso queira assistir<a href="midia/640x360-webm-pexels-arvin-latifi-6466763.webm">Baixe aqui</a></p>
+    </video>
+    <p>Use a tag &lt;video&gt; os parametros <br> "width" (definindo o tamanho em que vai apresentar o video na tela), <br> "poster" (definindo uma imagem para aparecer como capa do video) e <br> "controls" (para aparecerem os controles basicos do video como play/pause, volume etc.)</p>
+    <p>Use &lt;source&gt; com os parametros "src" e "type" para identificar o video e formato de arquivo.</p>
+    <p><mark>OBS: Quanto maior é o arquivo, mais caro pode ser para manter a hospedagem dele.</mark></p>
+    <p>Use o parametro "loop" para o video ser reproduzido continuamente</p>
+    <h1>Inserindo videos de hospedagem externa (youtube)</h1>
+    <ol>
+        <li>Escolha o video no youtube</li>
+        <li>Clique em compartilhar-incorporar (isso vai gerar um código html)</li>
+        <li>Clique em copiar e cole o código.</li>
+    </ol>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/H2j2gGqRXxI" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <h1>Inserindo videos de hospedagem externa (vimeo)</h1>
+    <ol>
+        <li>Vimeo é um site para hospedagem de videos pago. <br> Para acessa-lo é necessário ter o link do video.</li>
+        <li>Acesse o video desejado.</li>
+        <li>Clique em compartilhar</li>
+        <li>Clique em mais opções</li>
+        <li>Defina como quer que as informações apareçam.</li>
+        <li>Clique sobre o código em html, copie e cole o código.</li>
+    </ol>
+    <iframe src="https://player.vimeo.com/video/688927025?h=ceea46a196&color=ef7b00&byline=0&portrait=0" width="560"
+        height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <p><a href="https://vimeo.com/688927025">Oficinas de Arte-Educa&ccedil;&atilde;o</a> from <a
+            href="https://vimeo.com/eduardosrur">Eduardo Srur</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+</body>
+</html>

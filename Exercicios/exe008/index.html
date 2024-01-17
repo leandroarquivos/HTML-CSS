@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Formatações</h1>
+    <h2>Código-fonte / Pré-formatação</h2>
+    <p>Fonte monoespaçada facilita na leitura de pequenas letras (como por exemplo, em linhas de códigos) por isso usa-se a tag &lt;code&gt;</p>
+    <p>Exemplo: <code>document.getElementbyID('teste')</code>usado em linguagem Javascript.</p>
+    <p>Outra forma de envelopar com a tag &lt;code&gt; e manter o código organizado como foi escrito, é por meio da tag &lt;pre&gt;.</p>
+    <p>Um exemplo é o código Python</p>
+    <pre>
+        <code>
+            num = int(input(Digite um número))
+            if num % 2 == 0:
+                print(f'O número {num} é PAR')
+            else:
+                pritn(f'O número {num} é ÍMPAR')
+            print ('Fim do Programa')
+        </code>
+    </pre>
+    <h2>Citações</h2>
+    <h3>Citações simples</h3>
+    <p>Ao fazer uma citação usa-se a tag &lt;q&gt; que cria aspas no texto dando sentido àquilo que estiver escrito. Exemplo <q>O computador é um burro muito rápido.</q></p>
+    <h3>Citações completas</h3>
+    <p>Para isto, usamos a tag &lt;blockquote&gt;.</p>
+    <p>Para identificar, de onde vem a citação também usa-se a tag "cite"</p>
+    <p>Um exemplo é:</p>
+    <blockquote cite="https://www.cursoemvideo.com/curso/html5-css3-modulo1/aulas/modulo-1-2/modulos/capitulo-8-aula-4-citacoes-e-codigos/#google_vignette">
+        Você sabe como adicionar citações ao seu site? Sabe como representar um trecho de código dentro de uma página? Veja a
+        resposta para todas essas perguntas assistindo esse vídeo até o final.
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>É uma forma de identificar significado de siglas entre outras formas de texto abraviado, usando a tag &lt;abbr&gt;</p>
+    <p>Esta frase tem <abbr title="Exemplo">Ex.</abbr> de palavras abreviadas, de siglas <abbr title="Et coetera">ETC</abbr></p>
+    <h2>Texto invertido</h2> 
+    <p>Usanso a tag &lt;bdo&gt; e o parametro "dir=rtl" o texto escrito só pode ser lido... <bdo dir="rtl">"de trás para frente"</bdo>(de trás para frente)</p>
+</body>
+</html>

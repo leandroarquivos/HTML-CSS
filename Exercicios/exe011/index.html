@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em html 5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Mudar o tamanho da imagem de acordo com o dispositivo onde é vista.</p>
+    <p>Obs:<mark>Ter a mesma imagem em tamanhos diferentes pode facilitar.</mark></p>
+    <p>Usa-se a tag &lt;picture&gt; (para identificar a imagem base) junto à tag &lt;source:media:type&gt; (para identificar o tamanho de acordo com o dispotivo usado.):</p>
+    <ul>
+        <li>Em "media" o "min-width" representa o tamanho minimo que a imagem tem que ter para a imagem aparecer do tamanho
+            proposto.</li>
+        <li>Em "media" o "max-width" representa o tamanho máximo que a imagem tem que ter para a imagem aparecer do tamanho
+            proposto.</li>
+        <li>Em "srcset" insira a imagem que aparecerá no lugar da original quando mudar o tamanho da tela</li>
+        <li>Em "type" não esqueça de identificar o formato do arquivo. Exemplo:png</li>
+    </ul>
+    <p>Isso faz com que a imagem diminua ou aumente de tamanho de acordo com o tamanho da tela onde está sendo vista.</p>
+    <h2>Exemplo</h2>
+    <picture>
+        <source media="(max-width: 500px)" srcset="Imagens/pp.png" type="image/png">
+        <source media="(max-width: 700px)" srcset="Imagens/imagem_p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/imagem_m.png" type="image/png">
+        <img src="Imagens/imagem_g.png" alt="Imagem grande">
+    </picture>
+    <h1>Ropruzindo audios</h1>
+    <p>Usa-se a tag &lt;audio&gt; e os parametros "autoplay" e, <mark>"controls" em caso do navegador não tocar o audio corretamente.</mark></p>
+    <audio src="Midia/Til I Hear'em Say (Instrumental) - NEFFEX.mp3" controls autoplay></audio>
+    <p>Os formatos normalmente compatíveis com navegadores:</p>
+    <ul>
+        <li>.mp3/.mpeg (preferencial)</li>
+        <li>.wav (obs: Arquivo muito grande para usar)</li>
+        <li>.ogg</li>
+    </ul>
+    <p>Outra forma é usando a tag &lt;audio&gt;</p>
+        <p>Use o parametro "preload" para identificar a forma de leitura que prefere que seja feita do audio</p>
+        <ol>
+            <li>Auto: Leitura automática</li>
+            <li>Metadata: Mostra os dados do audio, para ouvir é necessário iniciar ele.</li>
+            <li>None: não aparece nenhuma informação do audio.</li>
+        </ol>
+        <p>Use também os parametros "autoplay" e "controls" para aparecer os controles (play/pause, volume, etc)</p>
+    <p>Separadamente use a tag &lt;source:src&gt;</p>
+    <p>Em "src" coloque o audio que vai usar e em "type" idetifique o tipo de midia do audio</p>
+    <h2>Exemplo</h2>
+    <!--Para carregar o audio em qualquer lugar é interessante ter os 3 modelos de audio disponíveis, se for possível. Por isso os 3 modelos aparecem no exemplo abaixo.-->
+    <audio preload="metadata" autoplay controls>
+        <source src="Midia/Til I Hear'em Say (Instrumental) - NEFFEX.mp3" type="audio/mpeg">
+        <source src="Midia/Til I Hear'em Say (Instrumental) - NEFFEX.wav" type="audio/wav">
+        <source src="Midia/Til I Hear'em Say (Instrumental) - NEFFEX.ogg" type="audio/ogg">
+        <p>Seu navegador não consegue reproduzir este audio. Para baixar e ouvir<a href="Midia/Til I Hear'em Say (Instrumental) - NEFFEX.mp3">Clique Aqui</a></p>
+    </audio>    
+</body> 
+</html>
